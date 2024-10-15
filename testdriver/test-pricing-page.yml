@@ -1,0 +1,26 @@
+version: 4.0.69
+steps:
+  - prompt: Click on "Pricing" in the header.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Pricing
+        description: link in the header
+        action: click
+  - prompt: Assert that a pricing page with available plans is displayed.
+    commands:
+      - command: assert
+        expect: the pricing page with available plans is displayed
+  - prompt: Click on the first plan.
+    commands:
+      - command: hover-text
+        text: Create an Account
+        description: button for the first plan
+        action: click
+  - prompt: >-
+      Assert that the details for the selected plan are displayed.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the details for the selected plan are displayed
