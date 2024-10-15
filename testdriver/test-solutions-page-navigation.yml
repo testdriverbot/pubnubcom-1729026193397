@@ -1,0 +1,24 @@
+version: 4.0.69
+steps:
+  - prompt: Click on "Solutions" in the header.
+    commands:
+      - command: hover-text
+        text: Solutions
+        description: link in the header
+        action: click
+  - prompt: Assert that a page showing different solutions offered is displayed.
+    commands:
+      - command: assert
+        expect: the page shows different solutions offered
+  - prompt: Click on one of the solution categories.
+    commands:
+      - command: hover-text
+        text: Chat
+        description: solution category under "Solutions"
+        action: click
+  - prompt: >-
+      Assert that relevant details for the selected solution are shown.  # Use
+      the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the page shows details for the selected solution
