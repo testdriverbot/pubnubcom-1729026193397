@@ -1,0 +1,34 @@
+version: 4.0.69
+steps:
+  - prompt: Click on the search icon.
+    commands:
+      - command: hover-image
+        description: search icon in the header
+        action: click
+  - prompt: Enter "API documentation" in the search field.
+    commands:
+      - command: hover-text
+        text: Search or ask anything
+        description: search field
+        action: click
+      - command: type
+        text: API documentation
+  - prompt: Enter "API documentation" in the search field.
+    commands:
+      - command: hover-image
+        description: search icon in the header
+        action: click
+      - command: type
+        text: API documentation
+  - prompt: Enter "API documentation" in the search field.
+    commands:
+      - command: hover-image
+        description: search icon in the header
+        action: click
+      - command: type
+        text: API documentation
+  - prompt: Enter "API documentation" in the search field.
+    commands:
+      - command: hover-image
+        description: search icon in the header
+        action: click
