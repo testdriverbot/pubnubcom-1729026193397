@@ -1,0 +1,18 @@
+version: 4.0.69
+steps:
+  - prompt: Click on "Developers" in the header.
+    commands:
+      - command: hover-text
+        text: Developers
+        description: link in the header
+        action: click
+  - prompt: Assert that a developer resources page is displayed.
+    commands:
+      - command: assert
+        expect: the page displays "PubNub for Developers"
+  - prompt: >-
+      Validate the existence of documentation and tutorial links.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the page displays "Documentation" and "Tutorials" links
