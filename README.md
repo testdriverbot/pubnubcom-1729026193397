@@ -14,7 +14,7 @@ Next generation autonomous AI agent for end-to-end testing of web & desktop
 
 ---
 
-## Setup
+## Setup 
 
 First, [fork this repository](https://github.com/testdriverai/quickstart-web/fork).
 
